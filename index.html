@@ -14,12 +14,15 @@
 
 				<!-- Header -->
 					<header id="header">
-						<div class="logo">
+						<!-- <div class="logo">
 							<span class="icon fa-user"></span>
-						</div>
+						</div> -->
 						<div class="content">
 							<div class="inner">
 								<h1>Daniel Kuhman</h1>
+
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/LBaAADzG9A4?si=oSyJeJF3FsTs48nF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 								<p>I’m a trained research scientist with a strong background in data analytics and data science. I have over 9 years of experience in analytics across a variety of fields and industries.  
 									I bring the passion and expertise needed to help companies make the most of their data.</p>
 								<a href="assets/Daniel Kuhman - Resume.pdf" class="button" target="_blank">Resume</a>
@@ -39,7 +42,7 @@
 								<li><a href="#school">Education</a></li>
 								<li><a href="#skills">Skills</a></li>
 								<!-- <li><a href="#elements">Elements</a></li> -->
-								<!-- <li><a href="#projects">Projects</a></li> -->
+								<li><a href="#projects">Portfolio</a></li>
 								<!-- <li><a href="#contact">Contact</a></li> -->
 							</ul>
 						</nav>
@@ -179,24 +182,56 @@
 						<!-- Projects -->
 							<article id="projects">
 								<h2 class="major">A few things I've built</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<h3>Sample 1</h3>
-								<p>Text.</p>
-								<p>You can view the full report <a href="" target="_blank">here</a></p>
+								<span class="image main"><img src="images/case_study_1_img.png" alt="" /></span>
+								<h3>Case Study #1: Sales Reporting for Global Superstore</h3>
+
+								<p>Global Superstore - an online retailer specializing in office items - has asked for a static report that helps them understand their sales data.
+									In addition to sales data across the store as a whole, they asked for insights into sales performance between different global regions. Finally, 
+									they asked for a list of their most profitable items. 
+								</p>
+
+								<p> To do this, I loaded the .csv data they provided into BigQuery, where I transformed the data using SQL prior to extracting it and loading it into 
+									R. Once in R, I used R Markdown to generate a static report that addressed their needs.
+								</p>
+
+								<p>You can view the full report <a href="assets/global_superstore_final_report.html" target="_blank">here</a> (code snippets included!)</p>
+
+								<p>You can view the GitHub repository <a href="https://github.com/dkuhman/analytics_portfolio/tree/main/case_study_global_superstore" target="_blank">here</a></p>
+
+								<p>Skills demonstrated in this case study:</p>
+								<ul>
+									<li>BigQuery</li>
+									<li>SQL (Filter, Aggregate, Window Functions, CTE Tables)</li>
+									<li>R (Markdown, Tidyverse, KableExtra, ggplot)</li>
+									<li>Data Cleaning</li>
+									<li>Data Visualization</li>
+								</ul>
 
 								<hr style="opacity:0.2;">
 
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<h3>Sample 2</h3>
-								<p>Text.</p>
-								<p>You can view the full report <a href="" target="_blank">here</a></p>
+								<span class="image main"><img src="images/case_study_2_img.png" alt="" /></span>
+								<h3>Case Study #2: Customer Satisfaction at Google Fiber</h3>
 
-								<hr style="opacity:0.2;">
+								<p>Google Fiber asked me to create a dashboard using call center data to gain insight into customers who call the center multiple times. 
+									If a customer's concern is not addressed after their first call, it may be a sign of poor customer service. This dashboard should help the 
+									team undertand repeat callers and monitor repeat calls data in the future to observe whether any changes they make to their customer service
+									process are effective. Ultimately, their goal is to decrease repeat callers by improving customer satisfaction and operational efficiencies. </p>
 
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<h3>Sample 3</h3>
-								<p>Text.</p>
-								<p>You can view the full report <a href="" target="_blank">here</a></p>
+								<p>Google Fiber provided me with three csv files containing all relevant data. I loaded these data into BigQuery, where I unioned them into a single 
+									table and then exported to Tableau. In Tableau, I created an interactive dashboard that provided insights into repeat callers over time, which markets 
+									the repeat calls were coming from, and which problems were most prevelant for repeat calls. </p>
+								
+								<p>You can view the final Tableau dashboard <a href="https://public.tableau.com/app/profile/daniel.kuhman/viz/B_I_CaseStudy-GoogleFiberCallCenterAnalysis/GoogleFiber-RepeatCallersDashboard#1" target="_blank">here</a></p>
+
+								<p>You can view the final GitHub Repository <a href="https://github.com/dkuhman/analytics_portfolio/tree/main/case_study_google_fiber" target="_blank">here</a></p>
+
+								<p>Skills demonstrated in this case study:</p>
+								<ul>
+									<li>BigQuery</li>
+									<li>SQL (Union)</li>
+									<li>Tableau</li>
+									<li>Data Cleaning</li>
+								</ul>
 
 							</article>
 
